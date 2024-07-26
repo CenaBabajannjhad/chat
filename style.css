@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #1a1a1a;
+}
+.input {
+  width: 100%;
+  height: 10vh;
+  background: #c2c2c2;
+  padding-top: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.input > input {
+  width: 50%;
+  padding: 5px 10px;
+}
+.input > button {
+  width: 20%;
+  padding: 5px 10px;
+}
+/* chat box */
+.chat-box::-webkit-scrollbar {
+  display: none;
+}
+.chat-box {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+.chat-container {
+  padding: 10px 40px;
+}
+.me{
+    background: #098ac5;
+    width: 50%;
+    margin-right: auto;
+    border-bottom: 2px solid #1a1a1a;
+    padding: 10px;
+}
+.friend{
+    width: 50%;
+    background: #09ae6c;
+    border-bottom: 2px solid #1a1a1a;
+    padding: 10px;
+    text-align: right;
+    margin-left: auto;
+}
