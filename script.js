@@ -7,9 +7,8 @@ let whoTyping = true;
 // return input value
 let getInputValue = () => input.value;
 // reset input field
-let resetInputValue = () => {
-  input.value = "";
-};
+let resetInputValue = () => (input.value = "");
+
 // add event when clicked button
 sendButton.addEventListener("click", () => {
   // get input value
@@ -18,7 +17,7 @@ sendButton.addEventListener("click", () => {
   let ChatContext = `<div class="${whoTyping ? "me" : "friend"}">
                         <h3>${inputValue}</h3>
                     </div>`;
-  //append chat in chatContainer
+  //append chatContext in chatContainer
   chatContainer.insertAdjacentHTML("beforeend", ChatContext);
   // reset input value
   resetInputValue();
@@ -34,7 +33,7 @@ window.addEventListener("keypress", (Event) => {
     let ChatContext = `<div class="${whoTyping ? "me" : "friend"}">
                         <h3>${inputValue}</h3>
                       </div>`;
-    //append chat in chatContainer
+    //append chatContext in chatContainer
     chatContainer.insertAdjacentHTML("beforeend", ChatContext);
     // reset input value
     resetInputValue();
